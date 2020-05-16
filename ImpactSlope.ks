@@ -1,11 +1,28 @@
 Clearscreen.
 
-set impactCoord = addons:tr:impactpos.
-set impactPos = impactCoord:position.
+//set impactCoord = addons:tr:impactpos.
+//TODO campiare ship:geoposition con le coorinate del punto di impatto
+set impactCoord to ship:geoposition.
+set impactPos to impactCoord:position.
 
-set pointA = impactPos.
-set pointB = impactPos + V(1, 0, 0).
-set pointC = impactPos + V(0, 0, 1).
 
-print impactCoord.
-print impactPos:mag.
+
+//individuare i punti 
+set body to ship:body.
+set pointA to impactCoord.
+set pointB to ship:body:geopositionof(impactPos + 2*Heading(0, 0):vector).
+set pointc to ship:body:geopositionof(impactPos + 2*Heading(90, 0):vector).
+print pointA.
+print pointb.
+print pointc.
+
+//creare i vettori e disegnarli
+set northVector to pointB:position - pointA:position.
+set eastVector to pointC:position - pointA:position.
+set nvdraw to vecdraw(impactPos, northVector, red, "", 1.0, true).
+set evdraw to vecdraw(impactPos, eastVector, red, "", 1.0 true).
+
+//creare i lvettore uscente e confrontarli con UP
+set upVector to vectorcrossproduct(northVector, eastVector).
+set uvdraw to vecdraw(impactPos, upVector, blue, "", 1.0 true).
+print vectorangle(ship:up:vector, upVector)).
