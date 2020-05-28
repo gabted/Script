@@ -2,8 +2,7 @@ UNTIL 0 {
 
 Clearscreen.
 
-//set impactCoord = addons:tr:impactpos.
-//TODO campiare ship:geoposition con le coorinate del punto di impatto
+set impactCoord = addons:tr:impactpos.
 set impactCoord to ship:geoposition.
 set impactPos to impactCoord:position.
 
