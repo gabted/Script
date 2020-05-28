@@ -9,3 +9,4 @@
 -creare manuver node dal transfer window planner
 -script che urla come un ossesso se si avvicina un meteorite
 -calcolo traiettoria rientro atmosferico (troppo corta = schianto, troppo lunga = arrosto)
+-autosave ogni 5 minuti, o quando entri in orbita, o quando finisce uno script di liftoff eetc
