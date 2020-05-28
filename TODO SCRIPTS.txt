@@ -9,4 +9,5 @@ F-script liftoff del lanciatore
 -eseguire manuever node
 -creare manuver node dal transfer window planner //NON FONDAMENTALE MA FIGO
 -script che urla come un ossesso se si avvicina un meteorite //FABIO ELIMINA LA MOD PER PIACERE
--calcolo traiettoria rientro atmosferico (troppo corta = schianto, troppo lunga = arrosto)
+-calcolo traiettoria rientro atmosferico (troppo corta = schianto, troppo lunga = arrosto))
+-autosave ogni 5 minuti, o quando entri in orbita, o quando finisce uno script di liftoff eetc
