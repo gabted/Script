@@ -1,12 +1,8 @@
-UNTIL 0 {
-
 Clearscreen.
 
 set impactCoord to addons:tr:impactpos.
 set impactCoord to ship:geoposition.
 set impactPos to impactCoord:position.
-
-
 
 //individuare i punti 
 set body to ship:body.
@@ -29,7 +25,3 @@ set evdraw to vecdraw(impactPos, eastVector, red, "", 1.0, true).
 set upVector to vectorcrossproduct(northVector, eastVector).
 set uvdraw to vecdraw(impactPos, upVector, blue, "", 1.0, true).
 print "SLOPE FACTOR = " + vectorangle(ship:up:vector, upVector) AT(1,10).
-
-
-WAIT 0.1.
-}
