@@ -7,3 +7,4 @@
 -eseguire manuever node
 -creare manuver node dal transfer window planner
 -script che urla come un ossesso se si avvicina un meteorite
+-calcolo traiettoria rientro atmosferico (troppo corta = schianto, troppo lunga = arrosto)
