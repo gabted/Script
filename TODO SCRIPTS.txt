@@ -3,6 +3,7 @@
 -script di boot per pisa/flight e pisa/res e conn/updatesat
 -auto log dei voli sperimentali (da definire)
 -auto pointing dei satelliti, detto updatesat (controllare quando uno diventa più vicino dell'altro)
+-script distanza dal target (da definire)
 -script liftoff del lander di dune
 -eseguire manuever node
 -creare manuver node dal transfer window planner
