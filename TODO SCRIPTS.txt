@@ -1,12 +1,12 @@
 -script java autopull, detto gitAutoUpdate
 -script bash, detto KerbalTime, che lancia 2 ssh tunneling e gitAutoUpdate, e chiude il tunneling prima di chiudersi
--script di boot per pisa/flight e pisa/res e conn/updatesat
--auto log dei voli sperimentali (da definire)
+F-script di boot per pisa/flight e pisa/res e conn/updatesat
+F-auto log dei voli sperimentali (da definire)
 -auto pointing dei satelliti, detto updatesat (controllare quando uno diventa più vicino dell'altro)
 -script distanza dal target (da definire)
--script liftoff del lander di dune
+F-script liftoff del lander di dune
+F-script liftoff del lanciatore
 -eseguire manuever node
--creare manuver node dal transfer window planner
--script che urla come un ossesso se si avvicina un meteorite
+-creare manuver node dal transfer window planner //NON FONDAMENTALE MA FIGO
+-script che urla come un ossesso se si avvicina un meteorite //FABIO ELIMINA LA MOD PER PIACERE
 -calcolo traiettoria rientro atmosferico (troppo corta = schianto, troppo lunga = arrosto)
--autosave ogni 5 minuti, o quando entri in orbita, o quando finisce uno script di liftoff eetc
