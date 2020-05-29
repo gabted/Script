@@ -7,5 +7,9 @@ IDEE PER MISSIONI FUTURE
 
 - MINMUS REFUELING PROGRAM // Il pianeta minmus è noto per avere risorse minerarie, possiamo sbizzarrirci con lander e rover che estraggono del materiale dal suolo della luna e lo portano in orbita alla stazione di rifornimento
 
+- MOBILE LAB - //Un mix del programma M.O.L.E. e del rover... un rover che funge da abitazione per dei kerbal con un mini laboratorio per spostarsi sul suolo e fare scienza!
+
+
+
 
 
