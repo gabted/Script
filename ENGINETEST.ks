@@ -11,13 +11,13 @@ SET eng TO engList[0].
 SET targetfile to "flightLog.txt".
 function echo {
 	parameter text.
-	log text to path(targetfile).
+	print(text).
 }
 
 function printStats {
-	echo("maxThrust = "+eng:maxThrust).
-	echo("Thrust = "+eng:Thrust).
-	echo("isp = "+eng:isp).
+	print("maxThrust = "+eng:maxThrust).
+	print("Thrust = "+eng:Thrust).
+	print("isp = "+eng:isp).
 }
 
 echo("Inizio testing").
