@@ -28,12 +28,12 @@ echo("Throttle a 1").
 lock throttle to thr.
 printStats.
 
-until eng:thrust == eng:maxThrust {
+until eng:thrust = eng:maxThrust {
 	printStats.
 }
 
 echo("provo 6 valori di throttle").
-FROM {set thr to 0} UNTIL thr > 1 STEP {set thr to thr+0.2} DO {
+FROM {set thr to 0.} UNTIL thr > 1 STEP {set thr to thr+0.2.} DO {
 	wait(1).
 	echo("Throttle =  "+thr).
 	printStats.
