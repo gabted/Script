@@ -8,6 +8,8 @@ PRINT "ACFEL - ATMOSPHERIC CHECK FOR EXPERIMENTAL LIFTOFFS".
 PRINT "Flight Data from PISA".
 //Functions Declaration
 
+log ship:name to "name.csv".
+
 function pisa {
   print "ALT: " + ceiling(ship:altitude).
   print "AP: " + ceiling(apoapsis).
