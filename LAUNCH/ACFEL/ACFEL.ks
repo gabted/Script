@@ -31,18 +31,18 @@ function record {
   clearscreen.
   print "Recording Data at: " + TIME.
   print pisa.
-  log ceiling(ship:altitude) to "alt.txt".
-  log ceiling(apoapsis) to "ap.txt".
-  log ceiling(eta:apoapsis) to "eta_ap.txt".
-  log ceiling(pitch_for) to "pitch.txt".
-  AG1 OFF.
+  log ceiling(ship:altitude) to "alt.csv".
+  log ceiling(apoapsis) to "ap.csv".
+  log ceiling(eta:apoapsis) to "eta_ap.csv".
+  log ceiling(pitch_for) to "pitch.csv".
+  AG4 OFF.
 }
 
 
 //PROGRAM
 
 UNTIL 0 { 
-  if AG1 RECORD. 
+  if AG4 RECORD. 
   wait 0.1.
 }
 
