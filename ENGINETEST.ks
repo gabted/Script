@@ -2,14 +2,16 @@
 LIST ENGINES in engList.
 for eng in engList {
 	if eng:ignition {
-		print eng:name
-	}
+		print eng:name.
+	}.
 }.
 
-target = "flightLog.txt"
+LIST ENGINES in engList.
+SET eng TO engList[0].
+SET targetfile to "flightLog.txt".
 function echo {
 	parameter text.
-	log text to path(target).
+	log text to path(targetfile).
 }
 
 function printStats {
@@ -19,7 +21,7 @@ function printStats {
 }
 
 echo("Inizio testing").
-printStats.
+printStats().
 
 set thr to 1.
 echo("Throttle a 1").
