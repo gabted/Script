@@ -28,14 +28,8 @@ Set HalfBurnTime to (m/qRate) - m/(qRate*e^(Dv/2*Cvel)).
 Print("POSIZIONAMENTO").
 Sas on.
 Set sasmode to "Manuever".
-Wait(15).
-//WARPING
-Print("WARPING").
-//########################### MA NON DOVREBBE ESSERE WAIT UNTIL?
-Set KUNIVERSE:TIMEWARP:RATE to 50. 
-Until t0 < 70. {
-	Set KUNIVERSE:TIMEWARP:RATE to 0.
-}
+Wait(5).
+
 //INIZIO BURN
 Wait until n:eta <= (HalfBurnTime).
 set tset to 0.
