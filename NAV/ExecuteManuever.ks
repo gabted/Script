@@ -15,12 +15,12 @@ Set qRate to eng:AvailableThrust/Cvel. // thrust è definito come qC, dove q è 
 //noi sappiamo Dv e non sappiamo mf, e mf = mi - qt, cioè la massa rimanente dopo che ho sparato per t secondi
 //quindi da Dv possiamo ricavarci t, cioè il burntime
 //t = m/q(1-e^(-dv/2)), che riorganizzato per ragioni di stabilità diventa
-set burnTIME to m/qRate - m/(qRate*e^(Dv/cVel)).
+set burnTIME to m/qRate - m/(qRate*constant:e^(Dv/cVel)).
 
 //volendo che il burntime sia diviso in due periodi, uno iniziale, uno finale, entrambi che comportino Dv/2 ciascuno
 //ricavo il tempo necessario per spingere i primi Dv/2, e calcolo in che momento devo 
 //comincio a spingere prima di raggiongere il nodo, in modo tale da spingere Dv/2 prima del nodo e Dv/2 dopo
-Set HalfBurnTime to (m/qRate) - m/(qRate*e^(Dv/2*Cvel)).
+Set HalfBurnTime to (m/qRate) - m/(qRate*constant:e^(Dv/2*Cvel)).
 
 //ESECUZIONE NODO
 //##############################
