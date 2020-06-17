@@ -3,7 +3,6 @@
 
 CLEARSCREEN.
 //BOOT ANIMATION
-WAIT 1.
 
 
 PRINT "Running PISA v1.0".
