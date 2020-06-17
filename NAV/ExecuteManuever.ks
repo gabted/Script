@@ -8,7 +8,7 @@ Set Dv to n:DeltaV:mag.
 
 //ricavo le caratteristiche del razzo
 Set m to ship:mass.
-Set cVel to eng:ISP*g0. //C è la velocità del gas emesso, relativamente alla nave
+Set cVel to eng:ISP*constant:g0. //C è la velocità del gas emesso, relativamente alla nave
 Set qRate to eng:AvailableThrust/Cvel. // thrust è definito come qC, dove q è quanta massa viene emessa al secondo
 
 //equazione del razzo di Ciolkovsky: Dv = C*ln(mi/mf), con mi e mf massa iniziale e finale
