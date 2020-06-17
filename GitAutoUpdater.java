@@ -37,7 +37,9 @@ public class GitAutoUpdater {
             writer.flush();
 
             //pull
-            Runtime.getRuntime().exec("git pull", null, new File(path));
+			new ProcessBuilder("bash", "-c", command).start();
+            //TODO
+			//MANAGGIA AL JAVA FUEJSBEOSGEIOD
         }
         catch(IOException e){
             System.err.println("errore comunicazione");
