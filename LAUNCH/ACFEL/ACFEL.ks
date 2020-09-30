@@ -1,11 +1,11 @@
-//ACFEL
-//ATMOSPHERIC CHECK FOR EXPERIMENTAL LIFTOFFS
+//ACFEL V.10
+//AUTOMATIC CHECK FOR EXPERIMENTAL LIFTOFFS
 //pitch_for original link-> https://github.com/KSP-KOS/KSLib/blob/master/library/lib_navball.ks
+//Original Script by SpaceCarmelo
 
-clearscreen.
 
-PRINT "ACFEL - ATMOSPHERIC CHECK FOR EXPERIMENTAL LIFTOFFS".
-PRINT "Flight Data from PISA".
+PRINT "ACFEL - AUTOMATIC CHECK FOR EXPERIMENTAL LIFTOFFS".
+
 //Functions Declaration
 
 log ship:name to "name.csv".
