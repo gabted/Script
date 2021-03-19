@@ -63,7 +63,7 @@ until done{
     {
         print "End burn, remain dv " + round(nd:deltav:mag,1) + "m/s, vdot: " + round(vdot(dv0, nd:deltav),1).
         lock throttle to 0.
-        //break.
+        break.
     }
 
     //we have very little left to burn, less then 0.1m/s
