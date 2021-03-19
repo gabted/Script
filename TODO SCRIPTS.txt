@@ -11,3 +11,14 @@ F-script liftoff del lanciatore
 -script che urla come un ossesso se si avvicina un meteorite //FABIO ELIMINA LA MOD PER PIACERE
 -calcolo traiettoria rientro atmosferico (troppo corta = schianto, troppo lunga = arrosto))
 -autosave ogni 5 minuti, o quando entri in orbita, o quando finisce uno script di liftoff eetc
+
+_____
+
+Duna Plane Program List
+
+1 Motor Switch
+2 Full Recharge
+3 Landing Mode (Flap)
+4 Laserdist
+5 Always Reference
+6 Docking Assistance 
