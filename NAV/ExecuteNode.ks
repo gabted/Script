@@ -20,7 +20,6 @@ set max_acc to ship:maxthrust/ship:mass.
 // but if you're going to build a serious node execution script, you
 // need to look into the Tsiolkovsky rocket equation to account for
 // the change in mass over time as you burn.
-//
 set burn_duration to nd:deltav:mag/max_acc.
 print "Crude Estimated burn duration: " + round(burn_duration) + "s".
 
@@ -50,8 +49,7 @@ lock throttle to tset.
 set done to False.
 //initial deltav
 set dv0 to nd:deltav.
-until done
-{
+until done{
     //recalculate current max_acceleration, as it changes while we burn through fuel
     set max_acc to ship:maxthrust/ship:mass.
 
@@ -65,7 +63,7 @@ until done
     {
         print "End burn, remain dv " + round(nd:deltav:mag,1) + "m/s, vdot: " + round(vdot(dv0, nd:deltav),1).
         lock throttle to 0.
-        break.
+        //break.
     }
 
     //we have very little left to burn, less then 0.1m/s
