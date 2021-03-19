@@ -2,8 +2,10 @@
 //AUTOMATIC CHECK FOR EXPERIMENTAL LIFTOFFS
 //pitch_for original link-> https://github.com/KSP-KOS/KSLib/blob/master/library/lib_navball.ks
 //Original Script by SpaceCarmelo
+//ACFEL TRIGGER KEY = 4
 
-
+CLEARSCREEN.
+WAIT 1.
 PRINT "ACFEL - AUTOMATIC CHECK FOR EXPERIMENTAL LIFTOFFS".
 
 //Functions Declaration
