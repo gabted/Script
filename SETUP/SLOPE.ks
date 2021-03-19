@@ -3,8 +3,8 @@ Clearscreen.
 until 0 {
 
 wait 0.5.
-//set impactCoord to addons:tr:impactpos.
-set impactCoord to ship:geoposition.
+set impactCoord to addons:tr:impactpos.
+//set impactCoord to ship:geoposition.
 set impactPos to impactCoord:position.
 
 //individuare i punti 

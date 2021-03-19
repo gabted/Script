@@ -1,4 +1,9 @@
 clearscreen.
+
+WHEN ALT:RADAR < 20 THEN {
+    GEAR on.
+}
+
 print "Destroying Kinetic Energy".
 lock steering to retrograde.
 set thrust to 0.
