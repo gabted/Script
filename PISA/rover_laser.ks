@@ -3,6 +3,7 @@ SET laser_module TO SHIP:MODULESNAMED("LaserDistModule")[0].
 IF not laser_module:GETFIELD("Enabled") {
   laser_module:SETFIELD("Enabled",true).
 }.
+laser_module:SETFIELD("BEND X", 10).
 UNTIL FALSE {
 	PRINT "Laser is hitting: " + laser_module:GETFIELD("Hit").
 	PRINT "Laser distance is measuring " + laser_module:GETFIELD("Distance") + " meters".
