@@ -1,42 +1,18 @@
+PARAMETER LAT.
+PARAMETER LNG.
+
 
 CLEARSCREEN.
 
 
 
-function east_for {
-  parameter ves is ship.
-
-  return vcrs(ves:up:vector, ves:north:vector).
-}
-
-
-function compass_for {
-  parameter ves is ship,thing is "default".
-
-  local pointing is ves:facing:forevector.
-  if not thing:istype("string") {
-    set pointing to type_to_vector(ves,thing).
-  }
-
-  local east is east_for(ves).
-
-  local trig_x is vdot(ves:north:vector, pointing).
-  local trig_y is vdot(east, pointing).
-
-  local result is arctan2(trig_y, trig_x).
-
-  if result < 0 {
-    return 360 + result.
-  } else {
-    return result.
-  }
-}
-
-
 //pointing
-SET here TO SHIP:GEOPOSITION.   
+//SET here TO SHIP:GEOPOSITION.   
 //SET DESTINATION TO LATLNG(here:LAT-0.05,here:LNG).
-SET DESTINATION TO VESSEL("RINCO V1").
+//easter TO LATLNG(0.7017,22.746).
+//SET DESTINATION TO VESSEL("RINCO V1").
+//SET DESTINATION TO LATLNG(0.7017,22.746).
+SET DESTINATION TO LATLNG(LAT, LNG).
 PRINT "DISTanzaa: ".
 print DESTINATION:DISTANCE.
 
